@@ -1,0 +1,7 @@
+docker run --rm -e ARM_CLIENT_ID=%ARM_CLIENT_ID% -e ARM_CLIENT_SECRET=%ARM_CLIENT_SECRET% -e ARM_TENANT_ID=%ARM_TENANT_ID% -e ARM_SUBSCRIPTION_ID=%ARM_SUBSCRIPTION_ID% --mount type=bind,source="C:/Users/jairo/.m2",target="/home/vex/.m2" --mount type=bind,source="C:/Users/jairo/demo",target="/home/vex/app" --mount type=bind,source="C:/Users/jairo/.vex",target="/home/vex/.vex" jairoprogramador/vex-runtime-springboot-azure:latest test
+invalid argument "type=bind,source=\"C:/Users/jairo/.m2\",target=\"/home/vex/.m2\"" for "--mount" flag: parse error on line 1, column 18: bare " in non-quoted-field
+
+Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+Run 'docker run --help' for more information
+Error: exit status 125
