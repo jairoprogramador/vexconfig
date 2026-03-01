@@ -11,3 +11,14 @@ docker info --format "{{.OSType}}"
 NAME            DESCRIPTION                               DOCKER ENDPOINT                             ERROR
 default *       Current DOCKER_HOST based configuration   npipe:////./pipe/docker_engine
 desktop-linux   Docker Desktop                            npipe:////./pipe/dockerDesktopLinuxEngine
+
+
+
+PS C:\Users\jairo> docker context use desktop-linux
+desktop-linux
+Current context is now "desktop-linux"
+PS C:\Users\jairo> docker info --format "{{.OSType}}"
+
+failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: El sistema no puede encontrar el archivo especificado.
+PS C:\Users\jairo> docker ps
+failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: El sistema no puede encontrar el archivo especificado.
