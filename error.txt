@@ -5,6 +5,7 @@ Run 'docker run --help' for more information
 Error: exit status 125
 
 
+docker context use desktop-linux
 docker info --format "{{.OSType}}"
 
 NAME            DESCRIPTION                               DOCKER ENDPOINT                             ERROR
