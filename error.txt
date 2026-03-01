@@ -3,3 +3,6 @@ docker: Error response from daemon: invalid mount config for type "bind": invali
 
 Run 'docker run --help' for more information
 Error: exit status 125
+
+
+docker info --format "{{.OSType}}"
