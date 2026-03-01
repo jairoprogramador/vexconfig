@@ -1,24 +1,8 @@
-docker run --rm -e ARM_CLIENT_ID=%ARM_CLIENT_ID% -e ARM_CLIENT_SECRET=%ARM_CLIENT_SECRET% -e ARM_TENANT_ID=%ARM_TENANT_ID% -e ARM_SUBSCRIPTION_ID=%ARM_SUBSCRIPTION_ID% --mount type=bind,source=C:/Users/jairo/.m2,target=/home/vex/.m2 --mount type=bind,source=C:/Users/jairo/demo,target=/home/vex/app --mount type=bind,source=C:/Users/jairo/.vex,target=/home/vex/.vex jairoprogramador/vex-runtime-springboot-azure:latest test
-docker: Error response from daemon: invalid mount config for type "bind": invalid mount path: '/home/vex/.m2'
-
-Run 'docker run --help' for more information
-Error: exit status 125
-
-
-docker context use desktop-linux
-docker info --format "{{.OSType}}"
-
-NAME            DESCRIPTION                               DOCKER ENDPOINT                             ERROR
-default *       Current DOCKER_HOST based configuration   npipe:////./pipe/docker_engine
-desktop-linux   Docker Desktop                            npipe:////./pipe/dockerDesktopLinuxEngine
-
-
-
-PS C:\Users\jairo> docker context use desktop-linux
-desktop-linux
-Current context is now "desktop-linux"
-PS C:\Users\jairo> docker info --format "{{.OSType}}"
-
-failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: El sistema no puede encontrar el archivo especificado.
-PS C:\Users\jairo> docker ps
-failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: El sistema no puede encontrar el archivo especificado.
+puede encontrar la ruta especificada.
+PS C:\Users\jairo> docker context use defauld
+context "defauld": context not found: open C:\Users\jairo\.docker\contexts\meta\b52d75a2d8488f52487e41971065708df9fc816a4bb7f3d0aa02955b7f5ce603\meta.json: El sistema no puede encontrar la ruta especificada.
+PS C:\Users\jairo> docker context use *
+context name "*" is invalid, names are validated against regexp "^[a-zA-Z0-9][a-zA-Z0-9_.+-]+$"
+PS C:\Users\jairo> docker context use defauld
+context "defauld": context not found: open C:\Users\jairo\.docker\contexts\meta\b52d75a2d8488f52487e41971065708df9fc816a4bb7f3d0aa02955b7f5ce603\meta.json: El sistema no puede encontrar la ruta especificada.
+PS C:\Users\jairo>
