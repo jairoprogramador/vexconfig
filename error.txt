@@ -6,3 +6,7 @@ Error: exit status 125
 
 
 docker info --format "{{.OSType}}"
+
+NAME            DESCRIPTION                               DOCKER ENDPOINT                             ERROR
+default *       Current DOCKER_HOST based configuration   npipe:////./pipe/docker_engine
+desktop-linux   Docker Desktop                            npipe:////./pipe/dockerDesktopLinuxEngine
