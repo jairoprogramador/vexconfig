@@ -1,25 +1,5 @@
-docker run --rm -e ARM_CLIENT_ID=%ARM_CLIENT_ID% -e ARM_CLIENT_SECRET=%ARM_CLIENT_SECRET% -e ARM_TENANT_ID=%ARM_TENANT_ID% -e ARM_SUBSCRIPTION_ID=%ARM_SUBSCRIPTION_ID% --mount type=bind,source="C:/Users/jairo/.m2",target="/home/vex/.m2" --mount type=bind,source="C:/Users/jairo/demo",target="/home/vex/app" --mount type=bind,source="C:/Users/jairo/.vex",target="/home/vex/.vex" jairoprogramador/vex-runtime-springboot-azure:latest test
-invalid argument "type=bind,source=\"C:/Users/jairo/.m2\",target=\"/home/vex/.m2\"" for "--mount" flag: parse error on line 1, column 18: bare " in non-quoted-field
-
-Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
-
-Run 'docker run --help' for more information
-Error: exit status 125
-
-
-
-
-
-
-PS C:\Users\jairo\demo> docker run --rm -e ARM_CLIENT_ID=%ARM_CLIENT_ID% -e ARM_CLIENT_SECRET=%ARM_CLIENT_SECRET% -e ARM_TENANT_ID=%ARM_TENANT_ID% -e ARM_SUBSCRIPTION_ID=%ARM_SUBSCRIPTION_ID% --mount type=bind,source=C:/Users/jairo/.m2,target=/home/vex/.m2 --mount type=bind,source=C:/Users/jairo/demo,target=/home/vex/app --mount type=bind,source=C:/Users/jairo/.vex,target=/home/vex/.vex jairoprogramador/vex-runtime-springboot-azure:latest test
+docker run --rm -e ARM_CLIENT_ID=%ARM_CLIENT_ID% -e ARM_CLIENT_SECRET=%ARM_CLIENT_SECRET% -e ARM_TENANT_ID=%ARM_TENANT_ID% -e ARM_SUBSCRIPTION_ID=%ARM_SUBSCRIPTION_ID% --mount type=bind,source=C:/Users/jairo/.m2,target=/home/vex/.m2 --mount type=bind,source=C:/Users/jairo/demo,target=/home/vex/app --mount type=bind,source=C:/Users/jairo/.vex,target=/home/vex/.vex jairoprogramador/vex-runtime-springboot-azure:latest test
 docker: Error response from daemon: invalid mount config for type "bind": invalid mount path: '/home/vex/.m2'
 
 Run 'docker run --help' for more information
-
-
-
-Sending build context to Docker daemon    107kB
-Step 1/41 : FROM ubuntu:22.04@sha256:f9ff1df8e3e896d1c031de656e6b21ef91329419aba21e4a2029f0543e97243b AS downloader
-docker.io/library/ubuntu:22.04@sha256:f9ff1df8e3e896d1c031de656e6b21ef91329419aba21e4a2029f0543e97243b: Pulling from library/ubuntu
-no matching manifest for windows(10.0.26200)/amd64 in the manifest list entries
-Error: exit status 1
+Error: exit status 125
