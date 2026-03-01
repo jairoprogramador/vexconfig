@@ -13,3 +13,10 @@ PS C:\Users\jairo\demo> docker run --rm -e ARM_CLIENT_ID=%ARM_CLIENT_ID% -e ARM_
 docker: Error response from daemon: invalid mount config for type "bind": invalid mount path: '/home/vex/.m2'
 
 Run 'docker run --help' for more information
+
+
+
+RUN mkdir -p /home/vex/.m2 \
+    && mkdir -p /home/vex/.vex \
+    && mkdir -p /home/vex/app \
+    && chown -R vex:vex /home/vex
