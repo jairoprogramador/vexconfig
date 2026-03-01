@@ -1,8 +1,0 @@
-puede encontrar la ruta especificada.
-PS C:\Users\jairo> docker context use defauld
-context "defauld": context not found: open C:\Users\jairo\.docker\contexts\meta\b52d75a2d8488f52487e41971065708df9fc816a4bb7f3d0aa02955b7f5ce603\meta.json: El sistema no puede encontrar la ruta especificada.
-PS C:\Users\jairo> docker context use *
-context name "*" is invalid, names are validated against regexp "^[a-zA-Z0-9][a-zA-Z0-9_.+-]+$"
-PS C:\Users\jairo> docker context use defauld
-context "defauld": context not found: open C:\Users\jairo\.docker\contexts\meta\b52d75a2d8488f52487e41971065708df9fc816a4bb7f3d0aa02955b7f5ce603\meta.json: El sistema no puede encontrar la ruta especificada.
-PS C:\Users\jairo>
